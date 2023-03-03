@@ -6,6 +6,7 @@ import WhatIOffer from "./WhatIOffer";
 import SourceCode from "./SourceCode";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <SourceCode />
         <Resume />
         <Contact />
+        <Footer />
       </div>
     </div>
   );
