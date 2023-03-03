@@ -1,6 +1,6 @@
 const LandingPage = () => {
     return ( 
-        <div className="landing-page">
+        <section className="landing-page section-light">
             <div className="designer">
                 <h2>UI/UX Designer</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
@@ -10,7 +10,7 @@ const LandingPage = () => {
                 <h2>Front-end udvikler</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
             </div>
-        </div>
+        </section>
     );
 }
  

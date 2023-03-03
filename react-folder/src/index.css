@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+Body{
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+
+h1, h2, h3{
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+
+.section-dark{
+  background: #fafafa;
+  box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+
+
+.section-light{
+  background-color: transparent;
+  border-top: #ffffff solid 1px;
 }
