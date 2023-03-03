@@ -1,8 +1,10 @@
+import SdsLogoLight from './images/sds-logo-light.png'
+
 const NavBar = () => {
     return ( 
         <nav className="nav-bar">
             <div className="logo-wrapper">
-                <img src="../images/sds-logo-light.png" alt="logo" />
+                <img src={SdsLogoLight} alt="logo" />
                 <a href="/"><h1>Vicky Sonne Thomsen</h1></a>
             </div>
             <div className="links">

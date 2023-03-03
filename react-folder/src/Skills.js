@@ -1,6 +1,6 @@
 const Skills = () => {
     return ( 
-        <div className="skills">
+        <div className="skills section-dark">
             <h2>kompetencer.</h2>
             <div className="tools">
                 tool komponent*8

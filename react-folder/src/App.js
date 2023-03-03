@@ -4,6 +4,7 @@ import About from "./About";
 import Skills from "./Skills";
 import WhatIOffer from "./WhatIOffer";
 import SourceCode from "./SourceCode";
+import Resume from "./Resume";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <LandingPage />
         <About />
         <WhatIOffer />
-        <Skills />¨
+        <Skills />
         <SourceCode />
+        <Resume />
       </div>
     </div>
   );

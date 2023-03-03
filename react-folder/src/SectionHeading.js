@@ -1,5 +1,5 @@
 const SectionHeading = (props) => {
-    const {title, text} = props
+    const {title, text} = props;
     return ( 
         <div className="section-heading">
             <h2>{title}</h2>
