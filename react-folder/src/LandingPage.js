@@ -1,14 +1,14 @@
+import SectionHeading from "./SectionHeading";
+
 const LandingPage = () => {
     return ( 
         <section className="landing-page section-light">
             <div className="designer">
-                <h2>UI/UX Designer</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <SectionHeading title={"UI/UX Designer"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."} />
             </div>
-            <img src="xxx" alt="portræt photo af Vicky Sonne Thomsen"></img>
+            <img src="xxx" alt="portræt photo af Vicky Sonne Thomsen" />
             <div className="coder">
-                <h2>Front-end udvikler</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <SectionHeading title={"Front-end udvikler"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."} />
             </div>
         </section>
     );
