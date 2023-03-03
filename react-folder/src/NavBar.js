@@ -1,9 +1,9 @@
 const NavBar = () => {
     return ( 
-        <nav className="navbar">
+        <nav className="nav-bar">
             <div className="logo-wrapper">
                 <img src="../images/sds-logo-light.png" alt="logo"></img>
-                <a href="/">Vicky Sonne Thomsen</a>
+                <a href="/"><h1>Vicky Sonne Thomsen</h1></a>
             </div>
             <div className="links">
                 <a href="/about">About</a>
@@ -11,7 +11,7 @@ const NavBar = () => {
                 <a href="/contact">Contact</a>
             </div>
         </nav>
-     );
+    );
 }
  
 export default NavBar;
