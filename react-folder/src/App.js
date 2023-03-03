@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import WhatIOffer from "./WhatIOffer";
 import SourceCode from "./SourceCode";
 import Resume from "./Resume";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Skills />
         <SourceCode />
         <Resume />
+        <Contact />
       </div>
     </div>
   );
