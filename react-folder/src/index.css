@@ -4,27 +4,63 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bold: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  --semi-bold: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  --light: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+
+  --black: #333;
+  --grey: #757575;
+  --white: #FFF;
+
+  --Blue: #5FB2A8;
+  --Pink: #E1AE9E;
+  --Yellow: #DFAE36;
+  --Brown: #BC8E5B;
+  --red: #CA4544;
+
+  --whitespace-xs: 0.5rem;
+  --whitespace-sm: 1rem;
+  --whitespace-md: 1.5rem;
+  --whitespace-lg: 2rem;
+  --whitespace-xl: 4rem;
+  --whitespace-xxl: 6rem;
+
+  --border-radius: 4px;
+  --shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+}
+
 Body{
-  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-  font-size: 1.8rem;
-  color: #333333;
+  font-family: var(--light);
+  color: var(--black);
 }
 
-
-h1, h2, h3{
-  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+h1{
+  font-size: 1rem;
 }
 
+h2{
+  font-family: var(--bold);
+  font-size: 6.375rem;
+  font-weight: 550;
+}
+
+h3{
+  color: var(--grey);
+  font-size: 2.25rem;
+}
+
+p, li{
+  font-size: 1.125rem;
+}
 
 .section-dark{
   background-color: #fafafa;
-  /* background-color: aqua; */
   box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
 }
 
-
 .section-light{
   background-color: transparent;
-  border-top: #ffffff solid 1px;
+  border-top: #FFF solid 1px;
 }
 
