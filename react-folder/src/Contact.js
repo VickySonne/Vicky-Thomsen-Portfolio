@@ -7,7 +7,7 @@ import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
     return (
         <div className="contact">
-            <SectionHeading title={"kontact."} text={"Kontakt mig via sociale medier, mobil eller email"} />
+            <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />
             <div>
                 <a href="https://www.linkedin.com/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} color="red" />
