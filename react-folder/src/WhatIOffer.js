@@ -1,19 +1,29 @@
+import Lists from "./Lists";
+
 const WhatIOffer = () => {
     return ( 
         <div className="what-i-offer">
             <h2>jegTilbyder.</h2>
             <div className="part-designer">
                 <h3>Delvis designer og konceptudvikler</h3>
-                <ul>
-                    list komponent*5
-                </ul>
+                <Lists array={[
+                    {item: "Brugerundersøgelser", id:1}, 
+                    {item: "Indholdsstrategi", id:2}, 
+                    {item: "Prototyping", id:3}, 
+                    {item: "Design Thinking", id:4}, 
+                    {item: "Creating Value", id:5},
+                ]}/>
             </div>
             <img src="xxx" alt="pie-chart der illustrere hvad jeg tilbyder, en tredjedel front-end udvikling, to tredjedele UI/UX design og konceptudvikling" />
             <div className="part-coder">
                 <h3>Delvis koder</h3>
-                <ul>
-                    list komponent*5
-                </ul>
+                <Lists array={[
+                    {item: "\<clean code/\>", id:1}, 
+                    {item: "CSS Animation", id:2}, 
+                    {item: "Logical Thinking", id:3}, 
+                    {item: "SEO", id:4}, 
+                    {item: "Attention to detail", id:5},
+                ]}/>
             </div>
         </div>
     );
