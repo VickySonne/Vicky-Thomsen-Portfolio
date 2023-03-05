@@ -132,6 +132,11 @@ header{
   display: flex;
 }
 
+.lists li{
+  list-style-type: none;
+}
+
+
 .part-coder{
   flex: 1;
   display: flex;
@@ -148,13 +153,18 @@ header{
 }
 
 .about{
-  padding-top: var(--whitespace-xxl);
   display: flex;
 }
 
 .about-text{
+  padding-top: var(--whitespace-xxl);
   width: 50%;
 }
+
+/* .about-image{
+  background-size: cover;
+  height: 100%;
+} */
 
 .skills{
   padding: var(--whitespace-xxl) 0;
