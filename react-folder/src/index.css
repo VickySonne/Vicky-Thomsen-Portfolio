@@ -73,6 +73,10 @@ p, li{
   border-top: #FFF solid 1px;
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 header{
   background-color: #111;
 }
@@ -136,7 +140,6 @@ header{
   list-style-type: none;
 }
 
-
 .part-coder{
   flex: 1;
   display: flex;
@@ -161,13 +164,70 @@ header{
   width: 50%;
 }
 
-/* .about-image{
-  background-size: cover;
-  height: 100%;
-} */
-
 .skills{
   padding: var(--whitespace-xxl) 0;
+}
+
+.tools{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3rem;
+  column-gap: 6rem;
+}
+.tool{
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 5px solid var(--white);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool p{
+  color: var(--white);
+  border-radius: var(--border-radius);
+  margin: 0;
+  padding: 1rem 2rem;
+  height: 4rem;
+  min-width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html{
+  background-color: #f06529;
+}
+
+.css{
+  background-color: #2965f1;
+}
+
+.js{
+  background-color: var(--yellow);
+}
+
+.react{
+  background-color: #61dbfb;
+}
+
+.vue{
+  background-color: #42b883;
+}
+
+.wp{
+  background-color: #00749c;
+}
+
+.xd{
+  background-color: #440434;
+}
+
+.github{
+  background-color: var(--red);
 }
 
 .source-code{
