@@ -134,14 +134,17 @@ header{
 
 .part-coder{
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7rem;
 }
 
 .part-designer{
   flex: 1;
-}
-
-.pie-chart{
-  flex:1
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about{
@@ -153,3 +156,22 @@ header{
   width: 50%;
 }
 
+.skills{
+  padding: var(--whitespace-xxl) 0;
+}
+
+.source-code{
+  padding: var(--whitespace-xxl) 0;
+}
+
+.resume{
+  padding: var(--whitespace-xxl) 0;
+}
+
+.contact{
+  padding-top: var(--whitespace-xxl);
+}
+
+footer{
+  padding: 1.5rem 0;
+}
