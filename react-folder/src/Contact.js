@@ -16,13 +16,13 @@ const Contact = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="tel:+4542923630">
                         <FontAwesomeIcon icon={faPhone} color="red" />
                         <p>42 92 36 30</p>
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="mailto:vst1996@live.dk">
                         <FontAwesomeIcon icon={faEnvelope} color="red" />
                         <p>vst1996@live.dk</p>
                     </a>
