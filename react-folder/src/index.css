@@ -73,6 +73,10 @@ p, li{
   border-top: #FFF solid 1px;
 }
 
+a{
+  cursor: pointer;
+}
+
 .underline{
   text-decoration: underline;
 }
@@ -227,7 +231,7 @@ header{
 }
 
 .github{
-  background-color: var(--red);
+  background-color: var(--pink);
 }
 
 .source-code{
@@ -236,6 +240,21 @@ header{
 
 .resume{
   padding: var(--whitespace-xxl) 0;
+}
+
+.download-cv{
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: var(--border-radius);
+  background-color: var(--black);
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.download-cv:hover{
+  background-color: var(--grey);
+  transition: 0.3s
 }
 
 .contact{
