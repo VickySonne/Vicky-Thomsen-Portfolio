@@ -1,11 +1,14 @@
-// import { useState } from 'react'
+
 
 const NavBar = () => {
-    // const [id, setId] = useState();
+    
 
-    // const handleClick = () => {
-    //     setId(idtest);
-    // }
+    const handleClick = (props) => {
+        const { id } = props;
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
 
     return (
         <header>
@@ -14,9 +17,9 @@ const NavBar = () => {
                     <a href="/"><h1>Vicky Sonne Thomsen</h1></a>
                 </div>
                 <div className="links">
-                    <a href={NavBar("#about")}>Om Mig</a>
-                    <a href={NavBar("#skills")}>Kompetencer</a>
-                    <a href={NavBar("#contact")}>Kontakt</a>
+                    <p onClick={handleClick()}>Om Mig</p>
+                    <a href="#skills">Kompetencer</a>
+                    <a href="#contact">Kontakt</a>
                 </div>
             </nav>
         </header>
