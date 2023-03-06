@@ -3,7 +3,7 @@ import {FaEnvelope} from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section>
+        <section id="contact">
             <div className="contact whitespace">
                 <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />
                 <div>

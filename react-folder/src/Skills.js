@@ -2,7 +2,7 @@ import Tools from "./Tools"
 
 const Skills = () => {
     return (
-        <section className="section-dark">
+        <section id="skills" className="section-dark">
             <div className="skills whitespace">
                 <h2>kompetencer.</h2>
                 <div className="tools-list">

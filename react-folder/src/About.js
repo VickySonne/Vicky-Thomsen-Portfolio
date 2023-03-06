@@ -3,7 +3,7 @@ import AboutImage from "./images/website-about.png"
 
 const About = () => {
     return ( 
-        <section className="section-light">
+        <section id="about" className="section-light">
             <div className="about whitespace">
                 <div className="about-text">
                     <SectionHeading title={"omMig."} text={"Jeg er en kreativ webdesigner og udvikler med base i Odense"} />
