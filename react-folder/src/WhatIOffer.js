@@ -24,7 +24,7 @@ const WhatIOffer = () => {
                             {item: "\<clean code/\>", id:1}, 
                             {item: "CSS Animation", id:2}, 
                             {item: "Logical Thinking", id:3}, 
-                            {item: "SEO", id:4}, 
+                            {item: "Search Engine Optimization", id:4}, 
                             {item: "Attention to detail", id:5},
                         ]}/>
                     </div>

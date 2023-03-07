@@ -1,5 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
+import ContactImage from "./images/contact.png"
 
 const Contact = () => {
     return (
@@ -34,7 +35,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <img src="" alt="Vicky Sonne Thomsen der sidder med sin bærbar klar til at at svare" />
+                <img src={ContactImage} alt="Vicky Sonne Thomsen der sidder med sin bærbar klar til at at svare" />
             </div>
         </section>
         

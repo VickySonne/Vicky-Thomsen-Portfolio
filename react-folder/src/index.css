@@ -71,6 +71,11 @@ a{
   cursor: pointer;
 }
 
+::selection{
+  background: var(--black);
+  color: var(--white);
+}
+
 .underline{
   text-decoration: underline;
 }
@@ -91,6 +96,7 @@ header{
 .links{
   display: flex;
   gap: var(--whitespace-lg);
+  align-items: center;
 }
 
 .landing-page-section{
@@ -110,7 +116,6 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* max-width: 300px; */
 }
 
 .landing-page-text h2{
@@ -121,10 +126,17 @@ header{
   font-size: 1.125rem;
 }
 
+.designer{
+  max-width: 350px;
+}
+
 .designer h2{
   color: var(--green);
 }
 
+.coder{
+  max-width: 300px;
+}
 .coder h2{
   color: var(--blue);
 }

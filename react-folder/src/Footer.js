@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer className="section-dark">
             <div className="whitespace">
-                <p>Inspireret af <a a className="underline" href="https://www.adhamdannaway.com/" target="_blank">Adham Dannaway</a></p>
+                <p>Inspireret af <a className="underline" href="https://www.adhamdannaway.com/" target="_blank">Adham Dannaway</a></p>
             </div>
         </footer>
     );
