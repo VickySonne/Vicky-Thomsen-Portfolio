@@ -1,30 +1,40 @@
 import SectionHeading from "./SectionHeading";
-import {FaEnvelope} from "react-icons/fa";
+import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
 
 const Contact = () => {
     return (
         <section id="contact">
             <div className="contact whitespace">
-                <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />
-                <div>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        
-                        <p>LinkedIn</p>
-                    </a>
+                <div className="contact-text">
+                    <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />
+                    <div className="contact-icons">
+                        <div className="contact-icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <div className="icon-circle linkedin-bg-color">
+                                    <FaLinkedinIn size="2.5em" color="#FFF" />
+                                </div>
+                                <p>LinkedIn</p>
+                            </a>
+                        </div>
+                        <div className="contact-icon">
+                            <a href="tel:+4542923630">
+                                <div className="icon-circle phone-bg-color">
+                                    <FaPhone size="2.1em" color="#FFF" />
+                                </div>
+                                <p>42 92 36 30</p>
+                            </a>
+                        </div>
+                        <div className="contact-icon">
+                            <a href="mailto:vst1996@live.dk">
+                                <div className="icon-circle email-bg-color">
+                                    <FaEnvelope size="2.5em" color="#FFF" />
+                                </div>
+                                <p>vst1996@live.dk</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="tel:+4542923630">
-                        
-                        <p>42 92 36 30</p>
-                    </a>
-                </div>
-                <div>
-                    <FaEnvelope />
-                    <a href="mailto:vst1996@live.dk">
-                        
-                        <p>vst1996@live.dk</p>
-                    </a>
-                </div>
+                <img src="" alt="Vicky Sonne Thomsen der sidder med sin bærbar klar til at at svare" />
             </div>
         </section>
         

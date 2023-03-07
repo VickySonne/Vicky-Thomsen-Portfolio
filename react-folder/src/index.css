@@ -162,7 +162,6 @@ header{
 }
 
 .about-text{
-  /* padding-top: var(--whitespace-xxl); */
   width: 50%;
 }
 
@@ -257,6 +256,44 @@ header{
 
 .contact{
   padding-top: var(--whitespace-xxl);
+  display: flex;
+}
+
+.contact-text{
+  width: 50%;
+}
+
+.contact-icons{
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-icon a{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.icon-circle{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkedin-bg-color{
+  background-color: var(--blue);
+}
+
+.phone-bg-color{
+  background-color: var(--green);
+}
+
+.email-bg-color{
+  background-color: var(--pink);
 }
 
 footer{
