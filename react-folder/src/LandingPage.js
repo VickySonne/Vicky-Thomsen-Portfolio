@@ -2,7 +2,7 @@ import SectionHeading from "./SectionHeading";
 
 const LandingPage = () => {
     return ( 
-        <section className="landing-page-section section-light">
+        <section id="home" className="landing-page-section section-light">
             <div className="landing-page whitespace">
                 <div className="landing-page-text designer">
                     <SectionHeading title={"designer"} text={"Part UI/UX designer..."} />

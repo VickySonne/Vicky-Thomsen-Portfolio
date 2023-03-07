@@ -83,6 +83,8 @@ a{
 
 header{
   background-color: #111;
+  position: fixed;
+  width: 100vw;
 }
 
 .nav-bar{
@@ -98,7 +100,7 @@ header{
 }
 
 .landing-page-section{
-  height: 600px;
+  height: 80vh;
 }
 
 .landing-page{
@@ -107,6 +109,7 @@ header{
   background-image: url("./images/website-frontpage.png");
   background-size: cover;
   height: 100%;
+  margin-top: 5rem;
 }
 
 .landing-page-text{
@@ -161,10 +164,11 @@ header{
 
 .about{
   display: flex;
+  padding-top: var(--whitespace-xxl);
 }
 
 .about-text{
-  padding-top: var(--whitespace-xxl);
+  /* padding-top: var(--whitespace-xxl); */
   width: 50%;
 }
 

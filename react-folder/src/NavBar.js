@@ -2,9 +2,7 @@
 
 const NavBar = () => {
     
-
-    const handleClick = (props) => {
-        const { id } = props;
+    const handleClick = (id) => {
         document.getElementById(id).scrollIntoView({
             behavior: 'smooth',
         });
@@ -14,12 +12,12 @@ const NavBar = () => {
         <header>
             <nav className="nav-bar whitespace">
                 <div>
-                    <a href="/"><h1>Vicky Sonne Thomsen</h1></a>
+                    <a onClick={() => {handleClick("home")}}><h1>Vicky Sonne Thomsen</h1></a>
                 </div>
                 <div className="links">
-                    <p onClick={handleClick()}>Om Mig</p>
-                    <a href="#skills">Kompetencer</a>
-                    <a href="#contact">Kontakt</a>
+                    <a onClick={() => {handleClick("about")}}>Om Mig</a>
+                    <a onClick={() => {handleClick("skills")}}>Kompetencer</a>
+                    <a onClick={() => {handleClick("contact")}}>Kontakt</a>
                 </div>
             </nav>
         </header>
