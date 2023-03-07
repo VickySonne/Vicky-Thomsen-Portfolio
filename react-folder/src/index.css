@@ -1,9 +1,3 @@
-*{
-  all: unset;
-  display: revert;
-  box-sizing: border-box;
-}
-
 :root{
   --bold: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   --semi-bold: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
