@@ -8,6 +8,9 @@ const Tools = (props) => {
                     <p className={ array.cName } key={ array.id }>{ array.item }</p>
                 </div>
             ))}
+            <div className="tool empty-box">
+                <p>empty-box</p>
+            </div>
         </div>
     );
 }

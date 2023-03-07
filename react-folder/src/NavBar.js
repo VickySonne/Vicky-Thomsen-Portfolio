@@ -11,13 +11,15 @@ const NavBar = () => {
     return (
         <header>
             <nav className="nav-bar whitespace">
-                <div>
+                <div className="name hide media-481-show">
                     <a onClick={() => {handleClick("home")}}><h1>Vicky Sonne Thomsen</h1></a>
                 </div>
                 <div className="links">
-                    <a onClick={() => {handleClick("about")}}>Om Mig</a>
-                    <a onClick={() => {handleClick("skills")}}>Kompetencer</a>
-                    <a onClick={() => {handleClick("contact")}}>Kontakt</a>
+                    <a onClick={() => {handleClick("about")}}>om mig</a>
+                    <a onClick={() => {handleClick("skills")}}>kompetencer</a>
+                    <a onClick={() => {handleClick("contact")}}>kontakt</a>
+                </div>
+                <div className="icons hide">
                     <a href=""><FaLinkedinIn size="1.5em" color="#FFF"/></a>
                     <a href="tel:+4542923630"><FaPhone size="1.5em" color="#FFF"/></a>
                     <a href="mailto:vst1996@live.dk"><FaEnvelope size="1.5em" color="#FFF"/></a>

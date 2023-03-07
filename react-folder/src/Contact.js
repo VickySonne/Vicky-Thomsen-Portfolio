@@ -35,7 +35,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <img src={ContactImage} alt="Vicky Sonne Thomsen der sidder med sin bærbar klar til at at svare" />
+                <img className="contact-image hide" src={ContactImage} alt="Vicky Sonne Thomsen der sidder med sin bærbar klar til at at svare" />
             </div>
         </section>
         

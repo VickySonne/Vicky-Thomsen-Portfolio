@@ -17,7 +17,7 @@ const WhatIOffer = () => {
                             {item: "Koncept Udvikling", id:5},
                         ]}/>
                     </div>
-                    <img src={PieChart} alt="pie-chart der illustrere hvad jeg tilbyder, en tredjedel front-end udvikling, to tredjedele UI/UX design og konceptudvikling" />
+                    <img className="pie-chart" src={PieChart} alt="pie-chart der illustrere hvad jeg tilbyder, en tredjedel front-end udvikling, to tredjedele UI/UX design og konceptudvikling" />
                     <div className="part-coder">
                         <h3>Front-end Udvikling</h3>
                         <Lists array={[
