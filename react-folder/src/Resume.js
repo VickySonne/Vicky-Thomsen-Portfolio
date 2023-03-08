@@ -4,8 +4,8 @@ import FileSaver from 'file-saver';
 const Resume = () => {
     const downloadCv = () => {
         FileSaver.saveAs(
-            process.env.PUBLIC_URL + "/resource/testcv.pdf",
-            "VickySonneThomsenCV.pdf"
+            process.env.PUBLIC_URL + "/resource/cv.pdf",
+            "VickySonneThomsenMMD-CV.pdf"
         )
     }
     

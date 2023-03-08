@@ -20,7 +20,7 @@ const NavBar = () => {
                     <a onClick={() => {handleClick("contact")}}>kontakt</a>
                 </div>
                 <div className="icons hide">
-                    <a href=""><FaLinkedinIn size="1.5em" color="#FFF"/></a>
+                    <a href="https://www.linkedin.com/in/vicky-thomsen-8533ba239/" target="_blank"><FaLinkedinIn size="1.5em" color="#FFF"/></a>
                     <a href="tel:+4542923630"><FaPhone size="1.5em" color="#FFF"/></a>
                     <a href="mailto:vst1996@live.dk"><FaEnvelope size="1.5em" color="#FFF"/></a>
                 </div>

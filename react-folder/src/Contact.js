@@ -10,7 +10,7 @@ const Contact = () => {
                     <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />
                     <div className="contact-icons">
                         <div className="contact-icon">
-                            <a href="https://www.linkedin.com/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vicky-thomsen-8533ba239/" target="_blank">
                                 <div className="icon-circle linkedin-bg-color">
                                     <FaLinkedinIn size="2.5em" color="#FFF" />
                                 </div>
