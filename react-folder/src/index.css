@@ -88,11 +88,16 @@ header{
   background-color: #111;
   position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
 .nav-bar{
   color: var(--white);
   padding: 1.5rem 0;
+}
+
+.active {
+  color: var(--grey);
 }
 
 .links{
