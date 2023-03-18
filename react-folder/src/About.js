@@ -1,9 +1,37 @@
+import { useRef, useEffect, useState } from "react";
+
 import SectionHeading from "./SectionHeading";
-import AboutImage from "./images/website-about.png"
+import AboutImage from "./images/website-about.png";
 
 const About = () => {
+
+    const aboutRef = useRef();
+    const [aboutIsVisible, setAboutIsVisible] = useState();
+    console.log('about is visible', aboutIsVisible);
+
+    const options = {
+        threshold: 0.90
+    }
+
+    const navAbout = document.querySelector('#nav-about');
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setAboutIsVisible(entry.isIntersecting);
+        if(aboutIsVisible){
+            navAbout.classList.add("active");
+        } else {
+            navAbout?.classList.remove("active");
+        }
+      }, options)
+        observer.observe(aboutRef.current);
+        
+    }, [aboutRef, options])
+
     return ( 
-        <section id="about" className="section-light">
+        <section ref={aboutRef} id="about" className="section-light">
             <div className="about whitespace">
                 <div className="about-text">
                     <SectionHeading title={"omMig."} text={"Jeg er en kreativ webdesigner og udvikler med base i Odense"} />

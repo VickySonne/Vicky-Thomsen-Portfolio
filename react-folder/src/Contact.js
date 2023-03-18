@@ -1,10 +1,38 @@
+import { useRef, useEffect, useState } from "react";
+
+
 import SectionHeading from "./SectionHeading";
 import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
 import ContactImage from "./images/contact.png"
 
 const Contact = () => {
+
+    const contactRef = useRef();
+    const [contactIsVisible, setContactIsVisible] = useState();
+
+    const options = {
+        threshold: 0.70
+    }
+
+    const navContact = document.querySelector('#nav-contact');
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setContactIsVisible(entry.isIntersecting);
+        if(contactIsVisible){
+            navContact.classList.add("active");
+        } else {
+            navContact?.classList.remove("active");
+        }
+      }, options)
+        observer.observe(contactRef.current);
+        
+    }, [contactRef, options])
+
     return (
-        <section id="contact">
+        <section ref={contactRef} id="contact">
             <div className="contact whitespace">
                 <div className="contact-text">
                     <SectionHeading title={"kontakt."} text={"Kontakt mig via sociale medier, mobil eller email"} />

@@ -1,8 +1,35 @@
+import { useRef, useEffect, useState } from "react";
+
 import Tools from "./Tools"
 
 const Skills = () => {
+
+    const skillsRef = useRef();
+    const [skillsIsVisible, setSkillsIsVisible] = useState();
+
+    const options = {
+        threshold: 0.90
+    }
+
+    const navSkills = document.querySelector('#nav-skills');
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setSkillsIsVisible(entry.isIntersecting);
+        if(skillsIsVisible){
+            navSkills.classList.add("active");
+        } else {
+            navSkills?.classList.remove("active");
+        }
+      }, options)
+        observer.observe(skillsRef.current);
+        
+    }, [skillsRef, options])
+
     return (
-        <section id="skills" className="section-dark">
+        <section ref={skillsRef} id="skills" className="section-dark">
             <div className="skills whitespace">
                 <h2>kompetencer.</h2>
                 <div className="tools-list">

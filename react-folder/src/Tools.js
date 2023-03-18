@@ -5,7 +5,7 @@ const Tools = (props) => {
         <div className="tools">
             {array.map((array) => (
                 <div className="tool">
-                    <p className={ array.cName } key={ array.id }>{ array.item }</p>
+                    <p className={ array.cName } key={ array.id }> { array.item } </p>
                 </div>
             ))}
             <div className="tool empty-box">

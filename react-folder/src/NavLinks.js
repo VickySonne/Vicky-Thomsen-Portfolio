@@ -12,13 +12,13 @@ const NavLinks = (props) => {
         <div className="nav-links">
             <ul className="links burger-menu-left">
                 <li onClick={() => props.isMobile && props.closeMobileNav()}>
-                    <a onClick={() => {handleClick("about")}}>om mig</a>
+                    <a id="nav-about" className="" onClick={() => {handleClick("about")}}>om mig</a>
                 </li>
                 <li onClick={() => props.isMobile && props.closeMobileNav()}>
-                    <a onClick={() => {handleClick("skills")}}>kompetencer</a>
+                    <a id="nav-skills" onClick={() => {handleClick("skills")}}>kompetencer</a>
                 </li>
                 <li onClick={() => props.isMobile && props.closeMobileNav()}>
-                    <a onClick={() => {handleClick("contact")}}>kontakt</a>
+                    <a id="nav-contact" onClick={() => {handleClick("contact")}}>kontakt</a>
                 </li>
             </ul>
             <ul className="nav-icons burger-menu-left">

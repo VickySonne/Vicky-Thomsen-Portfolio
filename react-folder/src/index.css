@@ -105,6 +105,10 @@ header{
   padding: 1.5rem 0;
 }
 
+.active{
+  color: var(--grey);
+}
+
 .nav-icon{
   display: flex;
   justify-content: flex-end;
