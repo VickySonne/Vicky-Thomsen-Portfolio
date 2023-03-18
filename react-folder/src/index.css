@@ -71,6 +71,15 @@ a{
   cursor: pointer;
 }
 
+.links li a{
+  transition: 0.3s;
+}
+
+.links li a:hover{
+  color: var(--grey);
+  transition: 0.3s;
+}
+
 ::selection{
   background: var(--black);
   color: var(--white);
@@ -96,14 +105,42 @@ header{
   padding: 1.5rem 0;
 }
 
-.active {
-  color: var(--grey);
+.nav-icon{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu-icon{
+  cursor: pointer;
+}
+
+.mobile-nav .nav-links{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #111;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 100%;
+  padding-bottom: var(--whitespace-md);
+}
+
+.mobile-nav .burger-menu-left{
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 .links{
   display: flex;
-  justify-content:space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: var(--whitespace-md);
+}
+
+.nav-icons{
+  display: flex;
+  gap: 1.5rem;
 }
 
 .landing-page-section{
@@ -300,6 +337,10 @@ footer{
     font-size: 1.3rem;
   }
 
+  .mobile-nav .burger-menu-left{
+    max-width: 300px;
+  }
+
 }
 
 @media screen and (401px <= width) {
@@ -314,6 +355,10 @@ footer{
 
   .landing-page-text h2{
     font-size: 1.7rem;
+  }
+
+  .mobile-nav .burger-menu-left{
+    max-width: 370px;
   }
 
 }
@@ -333,8 +378,8 @@ footer{
     justify-content: space-between;
   }
 
-  .links{
-    gap: var(--whitespace-md);
+  .mobile-nav .burger-menu-left{
+    max-width: 450px;
   }
 
   .landing-page-section{
@@ -389,6 +434,10 @@ footer{
 
   h2{
     font-size: 3rem;
+  }
+
+  .mobile-nav .burger-menu-left{
+    max-width: 700px;
   }
 
   .landing-page-section{
@@ -462,6 +511,22 @@ footer{
     max-width: 900px;
   }
 
+  .mobile-nav{
+    display: none;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .links{
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+
   h2{
     font-size: 4rem;
   }
@@ -471,7 +536,7 @@ footer{
     align-items: center;
   }
 
-  .icons{
+  .nav-icons{
     display: flex;
     align-items: center;
     gap: var(--whitespace-lg);
