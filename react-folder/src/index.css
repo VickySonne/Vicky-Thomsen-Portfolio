@@ -648,3 +648,14 @@ footer{
   }
 
 }
+
+@media screen and (1550px <= width ) {
+  .whitespace{
+    max-width: 1225px;
+  }
+
+  .landing-page-section{
+    height: 75vh;
+  }
+
+}
