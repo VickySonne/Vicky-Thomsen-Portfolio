@@ -4,27 +4,12 @@ import MobileNav from "./MobileNav";
 const NavBar = () => {
     
     const handleClick = (id) => {
+        const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
         document.getElementById(id).scrollIntoView({
-            behavior: 'smooth',
+            behavior: smooth ? 'smooth' : 'auto',
         });
     }
-
-    // const sectionAbout = document.querySelector('#about');
-    // // // const sectionSkills = document.querySelector('#skills');
-    // // // const sectionContact = document.querySelector('#contact');
-
-    // // // const sectionArray = [sectionAbout, sectionSkills, sectionContact];
-
-    // const options = {};
-
-    // const observer = new IntersectionObserver(function(entries, observer){
-    //         entries.forEach(entry => {
-    //             console.log(entry);
-    //         })
-    // }, options);
-
-    // // observer.observe(sectionAbout);
-
 
     return (
         <header>

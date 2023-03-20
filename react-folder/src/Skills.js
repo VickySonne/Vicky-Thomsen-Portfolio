@@ -16,17 +16,19 @@ const Skills = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setSkillsIsVisible(entry.isIntersecting);
-        if(skillsIsVisible){
-            navSkills.classList.add("active");
-        } else {
-            navSkills?.classList.remove("active");
-        }
-      }, options)
+            const entry = entries[0];
+            setSkillsIsVisible(entry.isIntersecting);
+
+            if(skillsIsVisible){
+                navSkills?.classList.add("active");
+            } else {
+                navSkills?.classList.remove("active");
+            }
+        }, options);
+
         observer.observe(skillsRef.current);
         
-    }, [skillsRef, options])
+    }, [skillsIsVisible, navSkills?.classList, skillsRef, options])
 
     return (
         <section ref={skillsRef} id="skills" className="section-dark">

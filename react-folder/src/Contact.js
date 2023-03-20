@@ -19,17 +19,19 @@ const Contact = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setContactIsVisible(entry.isIntersecting);
-        if(contactIsVisible){
-            navContact.classList.add("active");
-        } else {
-            navContact?.classList.remove("active");
-        }
-      }, options)
+            const entry = entries[0];
+            setContactIsVisible(entry.isIntersecting);
+            
+            if(contactIsVisible){
+                navContact?.classList.add("active");
+            } else {
+                navContact?.classList.remove("active");
+            }
+        }, options);
+
         observer.observe(contactRef.current);
         
-    }, [contactRef, options])
+    }, [contactIsVisible, navContact?.classList, contactRef, options])
 
     return (
         <section ref={contactRef} id="contact">

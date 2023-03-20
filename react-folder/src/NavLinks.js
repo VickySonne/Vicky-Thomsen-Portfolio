@@ -3,8 +3,10 @@ import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
 const NavLinks = (props) => {
 
     const handleClick = (id) => {
+        const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
         document.getElementById(id).scrollIntoView({
-            behavior: 'smooth',
+            behavior: smooth ? 'smooth' : 'auto',
         });
     }
 
@@ -12,7 +14,7 @@ const NavLinks = (props) => {
         <div className="nav-links">
             <ul className="links burger-menu-left">
                 <li onClick={() => props.isMobile && props.closeMobileNav()}>
-                    <a id="nav-about" className="" onClick={() => {handleClick("about")}}>om mig</a>
+                    <a id="nav-about" onClick={() => {handleClick("about")}}>om mig</a>
                 </li>
                 <li onClick={() => props.isMobile && props.closeMobileNav()}>
                     <a id="nav-skills" onClick={() => {handleClick("skills")}}>kompetencer</a>
